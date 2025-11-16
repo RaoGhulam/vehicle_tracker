@@ -6,7 +6,6 @@ setup(
     packages=find_packages(),
     install_requires=[
         "opencv-python",
-        "ultralytics",
         "numpy"
     ],
     entry_points={
@@ -14,4 +13,5 @@ setup(
             "vehicle-tracker = vehicle_tracker.tracker:main",
         ],
     },
+
 )
