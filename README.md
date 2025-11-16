@@ -35,17 +35,23 @@ A simple vehicle tracking project using YOLO and ByteTrack. Detects vehicles (ca
     ```
     You can skip this step if you want to install globally, but using a virtual environment is safer.
 
-3. Install the package globally (or in the current Python environment):
+3. Install CPU-only PyTorch first (this avoids downloading large GPU packages):
+    ```bash
+    pip install torch==2.2.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+    ```
+
+
+4. Install the rest of the dependencies and package:
     ```bash
     pip install .
     ```
 
-4. Run the tracker on a video:
+5. Run the tracker on a video:
     ```bash
     vehicle-tracker --video "path_or_url_to_video.mp4"
     ```
 
-5. Optional: Uninstall the package later
+6. Optional: Uninstall the package later
     ```bash
     pip uninstall vehicle_tracker
     ```
