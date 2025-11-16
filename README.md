@@ -37,25 +37,20 @@ A simple vehicle tracking project using YOLO and ByteTrack. Detects vehicles (ca
 
 3. Install CPU-only PyTorch first (this avoids downloading large GPU packages):
     ```bash
-    pip install torch==2.2.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+    pip install torch --index-url https://download.pytorch.org/whl/cpu
     ```
 
-4. Install ultralytics without dependencies, since PyTorch is already installed:
-    ```bash
-    pip install ultralytics --no-deps
-    ```
-
-5. Install the rest of the dependencies and package:
+4. Install the rest of the dependencies and package:
     ```bash
     pip install .
     ```
 
-6. Run the tracker on a video:
+5. Run the tracker on a video:
     ```bash
     vehicle-tracker --video "path_or_url_to_video.mp4"
     ```
 
-7. Optional: Uninstall the package later
+6. Optional: Uninstall the package later
     ```bash
     pip uninstall vehicle_tracker
     ```
